@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #E3F2FD;
+}
+
+.backdrop {
+  width: 85vmin;
+  height: 100vmin;
+  background-color: #293447;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.gameDet {
+  color: #B8C6DC;
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 20px 27px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.playGnd{
+  height: 100%;
+  width: 100%;
+  background: #212837;
+  display: grid;
+  grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+}
+
+.playGnd .food {
+  background : orangered;
+}
+
+.playGnd .snake {
+  background : royalblue;
+}
+
+.buttons{
+ height: 8%;
+ display: flex;
+ justify-content: space-evenly;
+}
+
+.buttons i{
+ width: 25%;
+ font-size: 2.5rem;
+ color: #C7C7C7;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border: 1px solid black;
+}
+
+.buttons i:hover{
+ background: rgba(136, 136, 136, 0.5);
+}
+
+@media (max-width : 480px) {
+ .gameDet{
+  font-size: 0.8rem;
+ }
+ 
+ .buttons i{
+  font-size: 0.8rem;
+ }
+}
